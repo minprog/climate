@@ -1,0 +1,7 @@
+name: climate
+files:
+    required:
+        - climate.ipynb
+check:
+    tool: check50
+    slug: minprog/cs50x/2019/climate
