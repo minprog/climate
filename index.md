@@ -1,8 +1,9 @@
 # Climate
 
-## Jupyter Notebook
-
 Om je voor te bereiden op Netwerk Analyse en verschillende andere vervolgvakken, maak je nu alvast kennis met Jupyter Notebook. Dat is een omgeving waarin je kan programmeren als wel tekst kan schrijven. Een ideale omgeving om de resultaten van jouw programma te presenteren, maar ook een ideaal formaat voor vakken (zoals dit vak) om hun opdrachten in te verspreiden. Jupyter moet eerst geïnstalleerd worden. Hoe je dit doet lees je in de introductie van deze module.
+
+
+## Jupyter Notebook
 
 Je runt jupyter notebook in de cs50 IDE d.m.v.
 
@@ -17,11 +18,11 @@ Nieuwe cells kun je aanmaken met de knoppen bovenin het scherm, en je kan ze ook
 Behalve code, kunnen we ook tekst schrijven. Dit gaat in Markdown. Dat is een simpel mark-up taaltje (vandaar ook de naam). Zo kun je kopjes aanmaken met hekjes. Bijvoorbeeld # Klimaat creeërt een grote kop met de tekst Klimaat. Voeg je meer hekjes toe, dan krijg je een steeds kleiner kopje. Er zijn meer dingen die je kan doen, zoals links toevoegen, dikgedrukte tekst etc. Spiek maar even in de opdrachten straks!
 
 
-## What to do
+## Wat moet je doen
 
-Hier ga je data analyseren door bestanden in te lezen, te verwerken en weg te schrijven. Zie [/theory/file-io](/theory/file-io).
+Hier ga je data analyseren door bestanden in te lezen, te verwerken en weg te schrijven. Zie [de theoriepagina over het inlezen en schrijven van bestanden](/theory/io).
 
-De opdracht download je zo:
+De distro voor deze opdracht download je zo:
 
     wget https://github.com/Jelleas/climate/archive/master.zip
     unzip master.zip
@@ -29,10 +30,12 @@ De opdracht download je zo:
     mv climate-master climate
     cd climate
 
-Je start jupyter notebook in de CS50 IDE door middel van:
+Je start Jupyter Notebook in de CS50 IDE door middel van:
 
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
 ## Testen
 
-    check50 minprog/cs50x/2019/climate
+Check na het maken van de opdracht of deze aan de eisen voldoet:
+
+    check50 minprog/cs50x/2020/climate
