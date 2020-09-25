@@ -30,9 +30,13 @@ De distro voor deze opdracht download je zo:
     mv distro climate
     cd climate
 
+Bovenstaande moet je maar één keer doen!
+
 Je start Jupyter Notebook in de CS50 IDE door middel van:
 
     jupyter notebook
+
+Daarna open je de (hele lange) URL die daar vermeld staat. Vervolgens kun je via **File** > **Open** het bestand `climate.ipynb` openen om in te werken. Je kunt dit bestand steeds opslaan en later opnieuw openen om in verder te werken. Is de Jupyter-server gestopt? Gebruik dan nogmaals bovenstaande commando om de server weer te starten.
 
 ## Testen
 
