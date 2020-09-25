@@ -24,15 +24,15 @@ Hier ga je data analyseren door bestanden in te lezen, te verwerken en weg te sc
 
 De distro voor deze opdracht download je zo:
 
-    wget https://github.com/Jelleas/climate/archive/master.zip
-    unzip master.zip
-    rm master.zip
-    mv climate-master climate
+    wget https://github.com/minprog/climate/raw/2020/climate.zip
+    unzip climate.zip
+    rm climate.zip
+    mv distro climate
     cd climate
 
 Je start Jupyter Notebook in de CS50 IDE door middel van:
 
-    jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+    jupyter notebook
 
 ## Testen
 
