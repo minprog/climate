@@ -1,9 +1,14 @@
 # Climate
 
-Om je voor te bereiden op Netwerk Analyse en verschillende andere vervolgvakken, maak je nu alvast kennis met Jupyter Notebook. Dat is een omgeving waarin je kan programmeren als wel tekst kan schrijven. Een ideale omgeving om de resultaten van jouw programma te presenteren, maar ook een ideaal formaat voor vakken (zoals dit vak) om hun opdrachten in te verspreiden. Jupyter moet eerst geïnstalleerd worden. Hoe je dit doet lees je in de introductie van deze module.
+![](temperature.png)
 
+Laten we een steentje bijdragen aan de klimaatdiscussie en data analyseren die door de ECA (European Climate Assessment) [beschikbaar](http://eca.knmi.nl/dailydata/predefinedseries.php) wordt gemaakt in grote data files. We beperken ons tot data die de maximumtemperatuur beschrijft voor elke dag in De Bilt sinds 1901.
 
-## Jupyter Notebook
+## Notebooks
+
+Om je voor te bereiden op Netwerk Analyse en verschillende andere vervolgvakken, maak je nu alvast kennis met Jupyter Notebooks. In een notebook kun je programmeren, maar je kunt er ook teksten en plaatjes bij zetten. Een ideale omgeving om de resultaten van jouw programma te presenteren, maar ook een ideaal formaat voor vakken (zoals dit vak) om opdrachten in te verspreiden. Om notebooks te kunnen gebruiken moet je eerst Jupyter geïnstalleerd hebben.
+
+## De notebook-server opstarten
 
 Je runt jupyter notebook in de cs50 IDE d.m.v.
 
@@ -42,4 +47,4 @@ Daarna open je de (hele lange) URL die daar vermeld staat. Vervolgens kun je via
 
 Check na het maken van de opdracht of deze aan de eisen voldoet:
 
-    check50 minprog/cs50x/2020/climate
+    check50 -l minprog/climate/2020
