@@ -5,4 +5,4 @@ files:
         - climate.ipynb
 check:
     tool: check50
-    slug: minprog/cs50x/2020/climate
+    slug: minprog/climate/2020
