@@ -11,7 +11,7 @@ check50.internal.register.after_every(lambda : sys.path.pop())
 @check50.check()
 def exists():
     """climate.ipynb exists."""
-    check50.include("climate.data")
+    check50.include("distro/climate.data")
     check50.exists("climate.ipynb")
 
 
