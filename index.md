@@ -88,7 +88,7 @@ Als je maar 10 regels hebt kun je hier veel makkelijker zelf een tabelletje voor
 |        9 | 10 | 20010109 |                 10 | 20010109 |                 -8 | 20010106 |
 |       10 | 11 | 20010110 |                 11 | 20010110 |                 -8 | 20010106 |
 
-De kolommen "TX" en "DATE" zijn vergelijkbaar met de data uit de inputfile (we hebben de data zelf verzonnen in dit geval). Daarnaast hebben we voor elke regel de 4 gevraagde gegevens bijgehouden.
+De kolommen "TX" en "DATE" zijn vergelijkbaar met de data uit de inputfile (we hebben de data zelf verzonnen in dit geval). Daarnaast hebben we voor elke regel de 4 gevraagde gegevens bijgehouden. Je ziet dat op de onderste regel inderdaad de hoogste en laagste temperaturen uit het rijtje correct vermeld zijn en dat de bijbehorende datums ook kloppen.
 
 Let goed op dat er staat **tot nu toe**. Als je een loop schrijft dan ga je altijd **per regel** door de data. Je computer kan niet vooruit- of achteruit kijken! Op elk moment in de loop kun je dus niet anders dan een conclusie trekken over de data die je **tot dat moment** gezien hebt!
 
