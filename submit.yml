@@ -1,7 +1,6 @@
 name: climate
 files:
     required:
-        - analysis.pdf
         - climate.ipynb
 check:
     tool: check50
