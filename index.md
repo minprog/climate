@@ -2,7 +2,7 @@
 
 ![](temperature.png)
 
-Laten we een steentje bijdragen aan de klimaatdiscussie en data analyseren die door de ECA (European Climate Assessment) [beschikbaar](http://eca.knmi.nl/dailydata/predefinedseries.php) wordt gemaakt in grote data files. We beperken ons tot data die de maximumtemperatuur beschrijft voor elke dag in De Bilt sinds 1901.
+Laten we een steentje bijdragen aan de klimaatdiscussie en data analyseren die door de ECA (European Climate Assessment) [beschikbaar](https://www.ecad.eu/dailydata/predefinedseries.php) wordt gemaakt in grote data files. We beperken ons tot data die de maximumtemperatuur beschrijft voor elke dag in De Bilt sinds 1901.
 
 ## Notebooks
 
@@ -10,7 +10,7 @@ Om je voor te bereiden op Netwerk Analyse en verschillende andere vervolgvakken,
 
 ## De notebook-server opstarten
 
-Je runt jupyter notebook in de cs50 IDE d.m.v.
+Je runt jupyter notebook in de CS50 IDE d.m.v.
 
     jupyter notebook
 
@@ -29,7 +29,7 @@ Hier ga je data analyseren door bestanden in te lezen, te verwerken en weg te sc
 
 De distro voor deze opdracht download je zo:
 
-    wget https://github.com/minprog/climate/raw/2020/climate.zip
+    wget https://github.com/minprog/climate/raw/2021/dist/climate.zip
     unzip climate.zip
     rm climate.zip
     mv distro climate
@@ -99,4 +99,4 @@ Ook voor de andere opdrachten kun je dergelijke tabelletjes maken. Daarmee kun j
 
 Check na het maken van de opdracht of deze aan de eisen voldoet:
 
-    check50 -l minprog/climate/2020
+    check50 -l minprog/climate/2021
