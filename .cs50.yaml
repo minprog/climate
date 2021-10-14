@@ -1,6 +1,6 @@
 check50:
   checks: checks.py
-  files: &check50_files
+  files:
     - !exclude "*"
     - !require climate.ipynb
   dependencies:

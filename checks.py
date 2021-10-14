@@ -24,54 +24,33 @@ def compiles():
 
 
 @check50.check(compiles)
-def correct_min_temp(stdout):
+def min_temp(stdout):
     """print de minimum temperatuur"""
-    match = re.search("Minimum: [^\d-]*(-*\d+)", stdout)
-    if not match:
-        raise check50.Failure(
-            'kon "Minimum: XXX" niet vinden in de output',
-            help="let erop dat Minimum: precies zo wordt geprint"
-        )
-
-    answer = int(match.groups(0)[0])
-    correct_answer = -114
-
-    if answer != correct_answer:
-        raise check50.Failure(f"verwachtte {correct_answer}, maar vond {answer}")
+    find_number("Minimum:", -114, stdout)
 
 
 @check50.check(compiles)
-def correct_avg_temp(stdout):
+def avg_temp(stdout):
     """print de gemiddelde temperatuur"""
-    match = re.search("Gemiddelde: [^\d-]*(-*\d+)", stdout)
-    if not match:
-        raise check50.Failure(
-            'kon "Gemiddelde: XXX" niet vinden in de output',
-            help="let erop dat Gemiddelde: precies zo wordt geprint"
-        )
-
-    answer = int(match.groups(0)[0])
-    correct_answer = 135
-
-    if answer != 135:
-        raise check50.Failure(f"verwachtte {correct_answer}, maar vond {answer}")
+    find_number("Gemiddelde:", 135, stdout)
 
 
 @check50.check(compiles)
-def correct_max_temp(stdout):
+def max_temp(stdout):
     """print de maximum temperatuur"""
-    match = re.search("Maximum: [^\d-]*(-*\d+)", stdout)
-    if not match:
-        raise check50.Failure(
-            'kon "Maximum: XXX" niet vinden in de output',
-            help="let erop dat Maximum: precies zo wordt geprint"
-        )
+    find_number("Maximum:", 375, stdout)
 
-    answer = int(match.groups(0)[0])
-    correct_answer = 375
 
-    if answer != correct_answer:
-        raise check50.Failure(f"verwachtte {correct_answer}, maar vond {answer}")
+@check50.check(compiles)
+def median(stdout):
+    """print de mediaan van de temperaturen"""
+    find_number("Mediaan:", 135, stdout)
+
+
+@check50.check(compiles)
+def modus(stdout):
+    """print de modus van de temperaturen"""
+    find_number("Modus:", 90, stdout)
 
 
 @check50.check(compiles)
@@ -143,3 +122,18 @@ def correct_year_heatwave(stdout):
     """prints the year of the first heatwave"""
     if "1911" not in stdout:
         raise check50.Failure("expected 1911 as the year of the first heatwave")
+
+
+
+def find_number(prompt, number, text):
+    match = re.search(prompt + r"[^\d-]*(-*\d+)", text)
+    if not match:
+        raise check50.Failure(
+            f'kon "{prompt}" niet vinden in de output',
+            help=f"let erop dat {prompt} precies zo wordt geprint"
+        )
+
+    answer = int(match.groups(0)[0])
+
+    if answer != number:
+        raise check50.Failure(f"verwachtte {number}, maar vond {answer}")
