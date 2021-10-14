@@ -17,6 +17,7 @@ Als je een bestand wil inlezen of juist wegschrijven, dan moet je dit bestand *o
     # sluiten
     data_file.close()
 
+**Oefening** Maak een file `myfile.txt` met daarin een paar regels tekst. Maak een Python-bestand en kopieer daarin de bovenstaande code. Zorg dat inderdaad de eerste regel van je tekstbestand wordt geprint als je het programma uitvoert (runt).
 
 ## With
 
@@ -25,6 +26,7 @@ Omdat bestanden niet te lang open moeten blijven staan is het belangrijk om ze w
     with open("myfile.txt") as data_file:
         print(data_file.readline())
 
+**Oefening** Kopieer bovenstaande fragment en test het weer uit.
 
 ## Schrijven
 
@@ -35,6 +37,7 @@ Wil je het woord `hello` wegschrijven naar een bestand dan doe je dat zo:
 
 Standaard opent Python een bestand in leesmodus en kun je er dus niet naar schrijven. Om te schrijven moet je die `"w"` van write opgeven aan de functie `open`.
 
+**Oefening** Kopieer bovenstaande fragment en test het weer uit. Als het goed is wordt er een *nieuw* bestand aangemaakt met de tekst `hello` erin.
 
 ## Lezen en schrijven
 
@@ -46,6 +49,7 @@ Een bekend patroon is om uit één bestand te lezen en dan gegevens weg te schri
 
 Bovenstaande code kopieert de eerste regel tekst van één bestand naar het andere. Er is geen filter, geen enkele aanpassing, alleen maar dat kopiëren.
 
+**Oefening** Kopieer bovenstaande fragment en test het weer uit. Zorg dat je een `inputfile.txt` klaar hebt staan.
 
 ## Alle regels lezen
 
@@ -55,9 +59,10 @@ Er zijn verschillende manieren om meerdere regels uit een bestand te lezen. De m
         for line in input_file:
             print(line)
 
+**Oefening** Kopieer bovenstaande fragment en test het weer uit.
 
 ## Opdracht: een heel bestand kopiëren
 
 Als je bovenstaande voorbeelden combineert moet je een stukje code kunnen schrijven dat een compleet tekstbestand kopieert. Schrijf zo'n programma en vergelijk je oplossing dan met een medestudent (en daarna eventueel met nog iemand). Kijk ook of het lukt dit uit te testen.
 
-Lever je uitwerking hieronder in.
+Lever je uitwerking van deze laatste opdracht hieronder in.
