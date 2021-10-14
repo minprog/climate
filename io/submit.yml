@@ -1,0 +1,4 @@
+name: kopieer
+files:
+    required:
+        - kopieer.py

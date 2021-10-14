@@ -1,7 +1,8 @@
 # File Input & Output
 
-In Python kan je op verschillende manieren werken met (data)bestanden.
+In Python kan je op verschillende manieren werken met (data)bestanden. Hieronder vind je enkele voorbeelden, en onderaan een opdracht.
 
+> Deze opdracht is niet bedoeld voor samenwerken, maar je hoeft 'm ook niet helemaal alleen te doen. Het doel is ervaring opdoen met technieken en daarom moet je alles zelf oefenen. Maar schroom niet hulp te vragen, en als het nodig is kan iemand het even voordoen. Als je naderhand maar zelf alle stappen doorlopen hebt.
 
 ## Open en close
 
@@ -55,6 +56,8 @@ Er zijn verschillende manieren om meerdere regels uit een bestand te lezen. De m
             print(line)
 
 
-## Oefening: een heel bestand kopiëren
+## Opdracht: een heel bestand kopiëren
 
-Als je bovenstaande voorbeelden combineert moet je een stukje code kunnen schrijven dat een compleet tekstbestand kopieert. Probeer dit te schrijven en vergelijk je oplossing dan met een medestudent (en daarna eventueel met nog iemand). Kijk ook of het lukt dit uit te testen.
+Als je bovenstaande voorbeelden combineert moet je een stukje code kunnen schrijven dat een compleet tekstbestand kopieert. Schrijf zo'n programma en vergelijk je oplossing dan met een medestudent (en daarna eventueel met nog iemand). Kijk ook of het lukt dit uit te testen.
+
+Lever je uitwerking hieronder in.
