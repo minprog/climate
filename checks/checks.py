@@ -1,17 +1,18 @@
 import check50
 import uva.check50.py
 import check50.internal
-import re
+import csv
 import os
+import re
 import sys
 
-check50.internal.register.before_every(lambda : sys.path.append(os.getcwd()))
-check50.internal.register.after_every(lambda : sys.path.pop())
+check50.internal.register.before_every(lambda: sys.path.append(os.getcwd()))
+check50.internal.register.after_every(sys.path.pop)
 
 @check50.check()
 def exists():
     """climate.ipynb exists."""
-    check50.include("dist/climate/climate.txt")
+    check50.include("../dist/climate/climate.txt")
     check50.exists("climate.ipynb")
 
 
@@ -51,6 +52,24 @@ def median(stdout):
 def modus(stdout):
     """print de modus van de temperaturen"""
     find_number("Modus:", 90, stdout)
+
+
+@check50.check(compiles)
+def correct_variation_yearly(stdout):
+    """print de variatie van temperaturen per jaar"""
+    check50.include("answers/variation_yearly.csv")
+    with open("variation_yearly.csv") as f:
+        answers = list(csv.DictReader(f))
+    
+    for a in answers:
+        text = "{} varieerde de temperatuur tussen {} op {} {} en {} op {} {}".format(*a.values())
+        
+        if text not in stdout:
+            text = "In " + text
+            raise check50.Failure(
+                f'kon "{text}" niet vinden in de output',
+                help="let extra goed op de spelling en of er niet te veel spaties staan"
+            )
 
 
 @check50.check(compiles)
