@@ -11,7 +11,7 @@ check50.internal.register.after_every(lambda : sys.path.pop())
 @check50.check()
 def exists():
     """climate.ipynb exists."""
-    check50.include("distro/climate.data")
+    check50.include("dist/climate/climate.txt")
     check50.exists("climate.ipynb")
 
 
@@ -24,16 +24,54 @@ def compiles():
 
 
 @check50.check(compiles)
-def correct_max_temp(stdout):
-    """prints the maximum temperature measured"""
-    match = re.search("maximale temperatuur[^\d]*(\d+[\.,]\d+)", stdout)
+def correct_min_temp(stdout):
+    """print de minimum temperatuur"""
+    match = re.search("Minimum: [^\d-]*(-*\d+)", stdout)
     if not match:
-        raise check50.Failure("expected: De maximale temperatuur was XX.XX graden op")
+        raise check50.Failure(
+            'kon "Minimum: XXX" niet vinden in de output',
+            help="let erop dat Minimum: precies zo wordt geprint"
+        )
 
-    answer = float(match.groups(0)[0].replace(",", "."))
+    answer = int(match.groups(0)[0])
+    correct_answer = -114
 
-    if answer != 36.8:
-        raise check50.Failure(f"expected 36.8 but found {answer}")
+    if answer != correct_answer:
+        raise check50.Failure(f"verwachtte {correct_answer}, maar vond {answer}")
+
+
+@check50.check(compiles)
+def correct_avg_temp(stdout):
+    """print de gemiddelde temperatuur"""
+    match = re.search("Gemiddelde: [^\d-]*(-*\d+)", stdout)
+    if not match:
+        raise check50.Failure(
+            'kon "Gemiddelde: XXX" niet vinden in de output',
+            help="let erop dat Gemiddelde: precies zo wordt geprint"
+        )
+
+    answer = int(match.groups(0)[0])
+    correct_answer = 135
+
+    if answer != 135:
+        raise check50.Failure(f"verwachtte {correct_answer}, maar vond {answer}")
+
+
+@check50.check(compiles)
+def correct_max_temp(stdout):
+    """print de maximum temperatuur"""
+    match = re.search("Maximum: [^\d-]*(-*\d+)", stdout)
+    if not match:
+        raise check50.Failure(
+            'kon "Maximum: XXX" niet vinden in de output',
+            help="let erop dat Maximum: precies zo wordt geprint"
+        )
+
+    answer = int(match.groups(0)[0])
+    correct_answer = 375
+
+    if answer != correct_answer:
+        raise check50.Failure(f"verwachtte {correct_answer}, maar vond {answer}")
 
 
 @check50.check(compiles)
@@ -50,19 +88,6 @@ def correct_max_temp_day(stdout):
 
     if day != 27 or month.lower() != "jun" or year != 1947:
         raise check50.Failure(f"expected 27 jun 1947 but found {day} {month} {year}")
-
-
-@check50.check(compiles)
-def correct_min_temp(stdout):
-    """prints the minimum temperature measured"""
-    match = re.search("minimale temperatuur[^\d-]*(-\d+[\.,]\d+)", stdout)
-    if not match:
-        raise check50.Failure("expected: De minimale temperatuur was -XX.XX graden op")
-
-    answer = float(match.groups(0)[0].replace(",", "."))
-
-    if answer != -11.3:
-        raise check50.Failure(f"expected -11.3 but found {answer}")
 
 
 @check50.check(compiles)
