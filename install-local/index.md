@@ -27,7 +27,7 @@ Geef daar het commando:
 
 ![](starting.png)
 
-Kopieer de link in het scherm (met `localhost` erin) en open deze in je webbrowser. Je bent dan helemaal klaar met dit stappenplan.
+Kopieer dan de link in het scherm (met `localhost` erin) en open deze in je webbrowser. Je bent nu helemaal klaar met dit stappenplan.
 
 ❌ Krijg je een foutmelding dat het niet gevonden kan worden? Dan is `jupyter` waarschijnlijk niet geinstalleerd. Ga dan naar stap 2. Weet je het niet zeker, check dan even met een medestudent die veel ervaring met computers heeft.
 
@@ -41,7 +41,7 @@ Open weer de command line of terminal. Geef dan het volgende commando:
 
 ![](python.png)
 
-Ga dan naar stap 4 om Jupyter te installeren.
+Stop Python door het commando `exit()` te geven (met haakjes!), en ga naar stap 4 om Jupyter te installeren.
 
 ❌ Krijg je een foutmelding dat het niet gevonden kan worden? Ga dan naar stap 3.
 
@@ -52,6 +52,8 @@ Open weer de command line of terminal. Geef dan het volgende commando:
     python
 
 ✅ Krijg je zoiets als hieronder? Dan is Python wel al goed geïnstalleerd. Check zéér nauwkeurig of er staat dat het Python **3** is. Dus er staat bijvoorbeeld `Python 3.8.1`, `Python 3.7.4` of `Python 3.9.1`.
+
+Stop Python door het commando `exit()` te geven (met haakjes!), en ga naar stap 4 om Jupyter te installeren.
 
 ![](python.png)
 
