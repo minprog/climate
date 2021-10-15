@@ -57,7 +57,7 @@ Stop Python door het commando `exit()` te geven (met haakjes!), en ga naar stap 
 
 ![](python.png)
 
-❌ Is het de verkeerde versie van Python of krijg je een foutmelding dat het niet gevonden kan worden? Ga dan naar stap 5.
+❌ Is het de verkeerde versie van Python (versie `2.7` bijvoorbeeld) of krijg je een foutmelding dat het niet gevonden kan worden? Ga dan naar stap 5.
 
 # 4. Installeer Jupyter notebook
 
