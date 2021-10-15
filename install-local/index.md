@@ -73,7 +73,9 @@ Dit kan even duren omdat er software gedownload moet worden. Naderhand kun je ki
 
     jupyter notebook
 
-Gaat dit mis? Neem dan direct contact op met de laptophelpdesk <mailto:laptops-fnwi@uva.nl> om het op te lossen.
+✅ Gelukt? Dan ben je klaar.
+
+❌ Gaat dit mis? Neem dan direct contact op met de laptophelpdesk <mailto:laptops-fnwi@uva.nl> om het op te lossen.
 
 # 5. Ga naar de laptophelpdesk
 
