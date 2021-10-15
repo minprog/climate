@@ -99,5 +99,4 @@ Als je hier bent uitgekomen moet waarschijnlijk Python nog geinstalleerd worden.
 
 ✅ Gelukt? Ga dan terug naar stap 4.
 
-❌ **Niet gelukt? Kom maandag om 9 uur naar lokaal A1.22 op Science Park zodat je binnen een uur Python werkend hebt.
-**
+❌ **Niet gelukt? Kom maandag om 9 uur naar lokaal A1.22 op Science Park zodat je binnen een uur Python werkend hebt.**
