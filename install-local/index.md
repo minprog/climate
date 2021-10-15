@@ -89,7 +89,7 @@ In dat geval ben je klaar met dit stappenplan en kun je door naar de opdracht.
 
 ## 5. Kom maandag om 9 uur Python installeren
 
-Als je hier bent uitgekomen moet waarschijnlijk Python nog geinstalleerd worden.
+Als je hier bent uitgekomen moet waarschijnlijk Python nog geinstalleerd worden. Je kunt het zelf proberen (als je Windows hebt) maar als het niet lukt moet je maandag om 9 uur langskomen voor hulp!
 
 **Alleen voor Windows** Ga naar de website van [Python](https://www.python.org/downloads/release/python-396/) en installeer de Windows Installer (64-bit). Let op dat je het vinkje **Add Python 3.9 to PATH** aanzet!!
 
