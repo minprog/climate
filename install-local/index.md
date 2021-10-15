@@ -85,7 +85,7 @@ Dit kan even duren omdat er software gedownload moet worden. Naderhand kun je ki
 
 In dat geval ben je klaar met dit stappenplan en kun je door naar de opdracht.
 
-❌ Gaat dit mis? Neem dan direct contact op met de laptophelpdesk <mailto:laptops-fnwi@uva.nl> om het op te lossen.
+❌ Gaat dit mis? Ga naar stap 5.
 
 ## 5. Kom maandag om 9 uur Python installeren
 
