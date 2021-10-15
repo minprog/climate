@@ -73,7 +73,7 @@ Dit kan even duren omdat er software gedownload moet worden. Naderhand kun je ki
 
     jupyter notebook
 
-✅ Gelukt? Dan ben je klaar.
+✅ Gelukt? Kopieer dan de link in het scherm (met `localhost` erin) en open deze in je webbrowser. Je bent nu helemaal klaar met dit stappenplan.
 
 ❌ Gaat dit mis? Neem dan direct contact op met de laptophelpdesk <mailto:laptops-fnwi@uva.nl> om het op te lossen.
 
