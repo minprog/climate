@@ -85,4 +85,6 @@ Als je hier bent uitgekomen moet waarschijnlijk Python nog geinstalleerd worden.
 
 **Alleen voor Mac** Python zou wel degelijk geïnstalleerd moeten zijn, dus je kunt het beste direct contact opnemen met de laptophelpdesk.
 
-De laptophelpdesk kan je helpen met installeren <mailto:laptops-fnwi@uva.nl>.
+✅ Gelukt? Ga dan terug naar stap 4.
+
+❌ Niet gelukt? De laptophelpdesk kan je helpen met installeren <mailto:laptops-fnwi@uva.nl>.
