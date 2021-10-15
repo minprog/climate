@@ -4,6 +4,7 @@
 
 Laten we een steentje bijdragen aan de klimaatdiscussie en data analyseren die door de ECA (European Climate Assessment) [beschikbaar](https://www.ecad.eu/dailydata/predefinedseries.php) wordt gemaakt in grote data files. We beperken ons tot data die de maximumtemperatuur beschrijft voor elke dag in De Bilt sinds 1901.
 
+**Let op: voor deze opdracht krijg je punten per gemaakte opdracht, en niet op basis van een review.**
 
 ## Notebooks
 
