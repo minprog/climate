@@ -31,7 +31,7 @@ Kopieer dan de link in het scherm (met `localhost` erin) en open deze in je webb
 
 ![](jupy.png)
 
-Je bent nu helemaal klaar met dit stappenplan.
+In dat geval ben je klaar met dit stappenplan en kun je door naar de opdracht.
 
 ❌ Krijg je een foutmelding dat het niet gevonden kan worden? Dan is `jupyter` waarschijnlijk niet geinstalleerd. Ga dan naar stap 2. Weet je het niet zeker, check dan even met een medestudent die veel ervaring met computers heeft.
 
