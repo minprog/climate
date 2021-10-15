@@ -28,16 +28,11 @@ Behalve code, kunnen we ook tekst schrijven. Dit gaat in Markdown. Dat is een si
 
 ## Wat moet je doen
 
-Hier ga je data analyseren door bestanden in te lezen, te verwerken en weg te schrijven.
+De distro voor deze opdracht download je via deze link:
 
-De distro voor deze opdracht download je zo:
+<https://github.com/minprog/climate/raw/2021/dist/climate.zip>
 
-    wget https://github.com/minprog/climate/raw/2021/dist/climate.zip
-    unzip climate.zip
-    rm climate.zip
-    cd climate
-
-Bovenstaande moet je maar één keer doen!
+Zorg dat je de map op een logische plek zet waar een backup van gemaakt wordt. Dus laat 'm niet in je Downloads-map staan.
 
 Je start Jupyter Notebook door middel van dit commando:
 
