@@ -18,4 +18,4 @@ echo "c.NotebookApp.port = 8080" >> /home/ubuntu/.jupyter/jupyter_notebook_confi
 echo "c.NotebookApp.open_browser = False" >> /home/ubuntu/.jupyter/jupyter_notebook_config.py
 
 # Setting the displayed URL to the correct amazonaws URL
-echo "c.NotebookApp.custom_display_url = 'https://' + os.environ['C9_HOSTNAME'] + '.vfs.cloud9.us-west-2.amazonaws.com'" >> /home/ubuntu/.jupyter/jupyter_notebook_config.py
+echo "c.NotebookApp.custom_display_url = 'https://' + os.environ['C9_HOSTNAME'] + '-8080.cs50.ws'" >> /home/ubuntu/.jupyter/jupyter_notebook_config.py
