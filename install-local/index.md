@@ -11,7 +11,9 @@ Voor experts hier de korte versie:
 - Zorg dat het package `notebook` geïnstalleerd is.
 - Check of je `jupyter notebook` kunt starten via de command line.
 
-# 1. Check Jupyter Notebook
+# Uitgebreide versie
+
+## 1. Check Jupyter Notebook
 
 Kijk of Python al geinstalleerd is in de terminal:
 
@@ -35,7 +37,7 @@ In dat geval ben je klaar met dit stappenplan en kun je door naar de opdracht.
 
 ❌ Krijg je een foutmelding dat het niet gevonden kan worden? Dan is `jupyter` waarschijnlijk niet geinstalleerd. Ga dan naar stap 2. Weet je het niet zeker, check dan even met een medestudent die veel ervaring met computers heeft.
 
-# 2. Check Python3
+## 2. Check Python3
 
 Open weer de command line of terminal. Geef dan het volgende commando:
 
@@ -49,7 +51,7 @@ Stop Python door het commando `exit()` te geven (met haakjes!), en ga naar stap 
 
 ❌ Krijg je een foutmelding dat het niet gevonden kan worden? Ga dan naar stap 3.
 
-# 3. Check Python
+## 3. Check Python
 
 Open weer de command line of terminal. Geef dan het volgende commando:
 
@@ -63,7 +65,7 @@ Stop Python door het commando `exit()` te geven (met haakjes!), en ga naar stap 
 
 ❌ Is het de verkeerde versie van Python (versie `2.7` bijvoorbeeld) of krijg je een foutmelding dat het niet gevonden kan worden? Ga dan naar stap 5.
 
-# 4. Installeer Jupyter notebook
+## 4. Installeer Jupyter notebook
 
 Geef het volgende commando om Jupyter Notebook te installeren:
 
@@ -81,16 +83,17 @@ Dit kan even duren omdat er software gedownload moet worden. Naderhand kun je ki
 
 ❌ Gaat dit mis? Neem dan direct contact op met de laptophelpdesk <mailto:laptops-fnwi@uva.nl> om het op te lossen.
 
-# 5. Ga naar de laptophelpdesk
+## 5. Kom maandag om 9 uur Python installeren
 
 Als je hier bent uitgekomen moet waarschijnlijk Python nog geinstalleerd worden.
 
-**Alleen voor Windows** Ga naar de website van [Python](https://www.python.org/downloads/release/python-396/) en installeer de Windows Installer (64-bit). Let op dat je het vinkje **Add Python 3.9 to PATH** aanzet!! Lukt het niet, neem contact op met de laptophelpdesk (zie onder).
+**Alleen voor Windows** Ga naar de website van [Python](https://www.python.org/downloads/release/python-396/) en installeer de Windows Installer (64-bit). Let op dat je het vinkje **Add Python 3.9 to PATH** aanzet!!
 
 ![](path.png)
 
-**Alleen voor Mac** Python zou wel degelijk geïnstalleerd moeten zijn, dus je kunt het beste direct contact opnemen met de laptophelpdesk.
+**Alleen voor Mac** Python zou wel degelijk geïnstalleerd moeten zijn, dus dan moeten we uitvogelen wat er aan de hand is.
 
 ✅ Gelukt? Ga dan terug naar stap 4.
 
-❌ Niet gelukt? De laptophelpdesk kan je helpen met installeren <mailto:laptops-fnwi@uva.nl>.
+❌ **Niet gelukt? Kom maandag om 9 uur naar lokaal A1.22 op Science Park zodat je binnen een uur Python werkend hebt.
+**
