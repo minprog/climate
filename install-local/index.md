@@ -27,7 +27,11 @@ Geef daar het commando:
 
 ![](starting.png)
 
-Kopieer dan de link in het scherm (met `localhost` erin) en open deze in je webbrowser. Je bent nu helemaal klaar met dit stappenplan.
+Kopieer dan de link in het scherm (met `localhost` erin) en open deze in je webbrowser. Het moet er ongeveer zo uitzien:
+
+![](jupy.png)
+
+Je bent nu helemaal klaar met dit stappenplan.
 
 ❌ Krijg je een foutmelding dat het niet gevonden kan worden? Dan is `jupyter` waarschijnlijk niet geinstalleerd. Ga dan naar stap 2. Weet je het niet zeker, check dan even met een medestudent die veel ervaring met computers heeft.
 
