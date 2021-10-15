@@ -12,11 +12,11 @@ Om je voor te bereiden op het vak Netwerkanalyse van volgende periode, en voor v
 
 ## De notebook-server opstarten
 
-Je runt jupyter notebook in de CS50 IDE d.m.v.
+Je runt jupyter notebook d.m.v.
 
     jupyter notebook
 
-Klik vervolgens op de link met `vfs.cloud9.us-west-2.amazonaws.com` erin. Er zijn hier drie tabjes: Files, Running, en Clusters. We hebben nu enkel de eerste nodig. Navigeer binnen Files naar een plek waar je jouw werk wilt opslaan. Dit zijn simpelweg de mappen op jouw computer, dus je kan altijd een nieuwe map aanmaken voor jouw werk. Zodra je bent aangekomen, klik je rechtsboven op het dropdown-menu `new`. Kies hier voor een Python3 notebook. Dan opent er een nieuw tabblad met daarin een nieuwe notebook.
+Klik vervolgens op de link met `localhost` erin. Er zijn hier drie tabjes: Files, Running, en Clusters. We hebben nu enkel de eerste nodig. Navigeer binnen Files naar een plek waar je jouw werk wilt opslaan. Dit zijn simpelweg de mappen op jouw computer, dus je kan altijd een nieuwe map aanmaken voor jouw werk. Zodra je bent aangekomen, klik je rechtsboven op het dropdown-menu `new`. Kies hier voor een Python3 notebook. Dan opent er een nieuw tabblad met daarin een nieuwe notebook.
 
 Voor we beginnen, ga linksboven naar het dropdown-menu file en klik rename. Noem je nieuwe notebook: auto. In jouw notebook heb je zogenaamde cells. Dat zijn vakken waar je zowel code als tekst kan schrijven. Probeer maar eens: `print(3 * 4)`. Voer je dit in de cell, en druk je vervolgens op shift+enter (zo **run** je een cell), dan zie je direct onder de cell de uitkomst. Pas op: druk je alleen op enter, dan krijg je een extra regel binnen de cell.
 
@@ -38,11 +38,11 @@ De distro voor deze opdracht download je zo:
 
 Bovenstaande moet je maar één keer doen!
 
-Je start Jupyter Notebook in de CS50 IDE door middel van:
+Je start Jupyter Notebook door middel van dit commando:
 
     jupyter notebook
 
-Daarna open je de (hele lange) URL die daar vermeld staat. Vervolgens kun je via **File** > **Open** het bestand `climate.ipynb` openen om in te werken. Je kunt dit bestand steeds opslaan en later opnieuw openen om in verder te werken. Is de Jupyter-server gestopt? Gebruik dan nogmaals bovenstaande commando om de server weer te starten.
+Daarna open je de (hele lange) URL die daar vermeld staat. Vervolgens kun je het bestand `climate.ipynb` openen om in te werken. Je kunt dit bestand steeds opslaan en later opnieuw openen om in verder te werken. Is de Jupyter-server gestopt? Gebruik dan nogmaals bovenstaande commando om de server weer te starten.
 
 <!--
 
