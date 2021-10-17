@@ -80,7 +80,7 @@ def modus(stdout):
 
 
 @check50.check(compiles)
-def correct_variation_yearly(stdout):
+def variation_yearly(stdout):
     """print de variatie van temperaturen per jaar"""
     check50.include("answers/variation_yearly.csv")
     with open("variation_yearly.csv") as f:
@@ -99,6 +99,23 @@ def correct_variation_yearly(stdout):
                 help="let extra goed op de spelling en of er niet te veel spaties staan"
             )
 
+
+@check50.check(compiles)
+def longest_heatwave(stdout):
+    """print de langste hittegolf voor ieder jaar"""
+    check50.include("answers/longest_heatwave.csv")
+    with open("longest_heatwave.csv") as f:
+        answers = list(csv.DictReader(f))
+
+    for a in answers:
+        text = "{} duurde de langste hittegolf {} dagen".format(*a.values())
+
+        if text not in stdout:
+            text = "In " + text
+            raise check50.Failure(
+                f'kon "{text}" niet vinden in de output',
+                help="let extra goed op de spelling en of er niet te veel spaties staan"
+            )
 
 @check50.check(compiles)
 def correct_max_temp_day(stdout):
