@@ -4,4 +4,4 @@ files:
         - climate.ipynb
 check:
     tool: check50
-    slug: minprog/climate/2021
+    slug: minprog/climate/2021/checks
