@@ -81,7 +81,7 @@ def modus(stdout):
 
 @check50.check(compiles)
 def variation_yearly(stdout):
-    """print de variatie van temperaturen per jaar"""
+    """print een overzicht per jaar van het maximum en minimum voor dat jaar"""
     check50.include("answers/variation_yearly.csv")
     with open("variation_yearly.csv") as f:
         answers = list(csv.DictReader(f))
@@ -97,7 +97,7 @@ def variation_yearly(stdout):
 
 @check50.check(compiles)
 def longest_heatwave(stdout):
-    """print de langste hittegolf voor ieder jaar"""
+    """print een overzicht per jaar van de lengte van de langste hittegolf"""
     zero_days = "duurde de langste hittegolf 0 dagen"
     if zero_days in stdout:
         raise check50.Failure(
