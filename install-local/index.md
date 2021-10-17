@@ -69,11 +69,11 @@ Stop Python door het commando `exit()` te geven (met haakjes!), en ga naar stap 
 
 Geef het volgende commando om Jupyter Notebook te installeren:
 
-    pip3 install notebook
+    pip3 install notebook seaborn
 
 Krijg je een melding dat `pip3` niet gevonden kan worden, probeer dan:
 
-    pip install notebook
+    pip install notebook seaborn
 
 Dit kan even duren omdat er software gedownload moet worden. Naderhand kun je kijken of het werkt met het commando:
 
