@@ -27,31 +27,56 @@ def compiles():
 @check50.check(compiles)
 def min_temp(stdout):
     """print de minimum temperatuur"""
-    find_number("Minimum:", -114, stdout)
+    try:
+        find_int("Minimum:", -114, stdout)
+        return
+    except check50.Failure:
+        pass
+    find_float("Minimum:", -11.4, stdout)
 
 
 @check50.check(compiles)
 def avg_temp(stdout):
     """print de gemiddelde temperatuur"""
-    find_number("Gemiddelde:", 135, stdout)
+    try:
+        find_int("Gemiddelde:", 135, stdout)
+        return
+    except check50.Failure:
+        pass
+    find_float("Gemiddelde:", 13.5, stdout)
 
 
 @check50.check(compiles)
 def max_temp(stdout):
     """print de maximum temperatuur"""
-    find_number("Maximum:", 375, stdout)
+    try:
+        find_int("Maximum:", 375, stdout)
+        return
+    except check50.Failure:
+        pass
+    find_float("Maximum:", 37.5, stdout)
 
 
 @check50.check(compiles)
 def median(stdout):
     """print de mediaan van de temperaturen"""
-    find_number("Mediaan:", 135, stdout)
+    try:
+        find_int("Mediaan:", 135, stdout)
+        return
+    except check50.Failure:
+        pass
+    find_float("Mediaan:", 13.5, stdout)
 
 
 @check50.check(compiles)
 def modus(stdout):
     """print de modus van de temperaturen"""
-    find_number("Modus:", 90, stdout)
+    try:
+        find_int("Modus:", 90, stdout)
+        return
+    except check50.Failure:
+        pass
+    find_float("Modus:", 90.0, stdout)
 
 
 @check50.check(compiles)
@@ -62,10 +87,13 @@ def correct_variation_yearly(stdout):
         answers = list(csv.DictReader(f))
     
     for a in answers:
-        text = "{} varieerde de temperatuur tussen {} op {} {} en {} op {} {}".format(*a.values())
-        
-        if text not in stdout:
-            text = "In " + text
+        text_int = "{} varieerde de temperatuur tussen {} op {} {} en {} op {} {}".format(*a.values())
+        a["min_temp"] = int(a["min_temp"]) / 10
+        a["max_temp"] = int(a["max_temp"]) / 10
+        text_float = "{} varieerde de temperatuur tussen {} op {} {} en {} op {} {}".format(*a.values())
+
+        if text_int not in stdout and text_float not in stdout:
+            text = "In " + text_float
             raise check50.Failure(
                 f'kon "{text}" niet vinden in de output',
                 help="let extra goed op de spelling en of er niet te veel spaties staan"
@@ -143,16 +171,30 @@ def correct_year_heatwave(stdout):
         raise check50.Failure("expected 1911 as the year of the first heatwave")
 
 
+def find_int(prompt, number, text):
+    number = int(number)
+    pattern = r"\d+"
+    answer = int(_find_number(prompt, pattern, text))
+    
+    if answer != number:
+        raise check50.Failure(f"verwachtte {number}, maar vond {answer}")
 
-def find_number(prompt, number, text):
-    match = re.search(prompt + r"[^\d-]*(-*\d+)", text)
+
+def find_float(prompt, number, text):
+    number = float(number)
+    pattern = r"\d+[.,]\d+"
+    answer = float(_find_number(prompt, pattern, text))
+
+    if answer != number:
+        raise check50.Failure(f"verwachtte {number}, maar vond {answer}")
+
+
+def _find_number(prompt, pattern, text):
+    match = re.search(prompt + r"[^\d-]*(-*" + pattern + r")", text)
     if not match:
         raise check50.Failure(
             f'kon "{prompt}" niet vinden in de output',
             help=f"let erop dat {prompt} precies zo wordt geprint"
         )
 
-    answer = int(match.groups(0)[0])
-
-    if answer != number:
-        raise check50.Failure(f"verwachtte {number}, maar vond {answer}")
+    return match.groups(0)[0]
