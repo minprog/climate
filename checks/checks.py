@@ -87,10 +87,10 @@ def variation_yearly(stdout):
         answers = list(csv.DictReader(f))
     
     for a in answers:
-        text_int = "{} varieerde de temperatuur tussen {} op {} {} en {} op {} {}".format(*a.values())
+        text_int = "{} varieerde de temperatuur tussen {} graden op {}/{} en {} graden op {}/{}".format(*a.values())
         a["min_temp"] = int(a["min_temp"]) / 10
         a["max_temp"] = int(a["max_temp"]) / 10
-        text_float = "{} varieerde de temperatuur tussen {} op {} {} en {} op {} {}".format(*a.values())
+        text_float = "{} varieerde de temperatuur tussen {} graden op {}/{} en {} graden op {}/{}".format(*a.values())
 
         find_any_prints([text_float, text_int], stdout)
 
@@ -122,9 +122,9 @@ def outliers(stdout):
         answers = list(csv.DictReader(f))
 
     for a in answers:
-        text_int = "{} is de waarde op {} {} {} een outlier".format(*a.values())
+        text_int = "{} is de waarde op {}/{}/{} een outlier".format(*a.values())
         a["temp"] = int(a["temp"]) / 10
-        text_float = "{} is de waarde op {} {} {} een outlier".format(*a.values())
+        text_float = "{} is de waarde op {}/{}/{} een outlier".format(*a.values())
 
         find_any_prints([text_float, text_int], stdout)
 
