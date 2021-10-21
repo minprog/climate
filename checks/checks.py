@@ -20,13 +20,17 @@ def exists():
 def compiles():
     """climate.ipynb compiles."""
     uva.check50.py.nbconvert("climate.ipynb")
-    uva.check50.py.compile("climate.py")
-    return uva.check50.py.run("climate.py").stdout
+    with open("climate.py") as original, open("climate2.py", "w") as redacted:
+        for line in original:
+            if not "regplot" in line:
+                redacted.write(line)
+    uva.check50.py.compile("climate2.py")
+    return uva.check50.py.run("climate2.py").stdout
 
 
 @check50.check(compiles)
 def min_temp(stdout):
-    """print de minimum temperatuur"""
+    """print de juiste minimum temperatuur"""
     try:
         find_int("Minimum:", -114, stdout)
         return
@@ -37,7 +41,7 @@ def min_temp(stdout):
 
 @check50.check(compiles)
 def avg_temp(stdout):
-    """print de gemiddelde temperatuur"""
+    """print de juiste gemiddelde temperatuur"""
     try:
         find_int("Gemiddelde:", 135, stdout)
         return
@@ -48,7 +52,7 @@ def avg_temp(stdout):
 
 @check50.check(compiles)
 def max_temp(stdout):
-    """print de maximum temperatuur"""
+    """print de juiste maximum temperatuur"""
     try:
         find_int("Maximum:", 375, stdout)
         return
@@ -59,18 +63,18 @@ def max_temp(stdout):
 
 @check50.check(compiles)
 def median(stdout):
-    """print de mediaan van de temperaturen"""
+    """print de juiste mediaan van de temperaturen"""
     try:
-        find_int("Mediaan:", 135, stdout)
+        find_int("Mediaan:", 136, stdout)
         return
     except check50.Failure:
         pass
-    find_float("Mediaan:", 13.5, stdout)
+    find_float("Mediaan:", 13.6, stdout)
 
 
 @check50.check(compiles)
 def modus(stdout):
-    """print de modus van de temperaturen"""
+    """print de juiste modus van de temperaturen"""
     try:
         find_int("Modus:", 90, stdout)
         return
