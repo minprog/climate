@@ -47,7 +47,7 @@ def avg_temp(stdout):
         return
     except check50.Failure:
         pass
-    find_float("Gemiddelde:", 13.5, stdout)
+    find_float("Gemiddelde:", 13, stdout)
 
 
 @check50.check(compiles)
